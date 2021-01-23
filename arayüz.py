@@ -4,13 +4,13 @@ import tkinter as tk
 from PIL import Image
 from PIL import ImageTk
 import os
-import crypto
-import xor
-import kaydet
-import hash
+from MyApp import crypto
+from MyApp import xor
+from MyApp import kaydet
+from MyApp import hash
 import os
 import cv2
-import dosyaac
+from MyApp import dosyaac
 
 root = tk.Tk()
 root.title('YMGK2 XOR')
