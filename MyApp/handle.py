@@ -1,5 +1,5 @@
-from . import emine
-from . import fatih
+from . import crypto
+from . import xor
 from . import kaydet
 from . import hash
 import os
@@ -25,7 +25,7 @@ def ymgk2xor(path,ServerHash):
 
         #Keyi okuduk xor yaptık ve kaydettik
         key = cv2.imread(('key/{}.png'.format(hashFile)))
-        sifresiz = fatih.xor(gorsel,key)
+        sifresiz = xor.xor(gorsel, key)
 
         kaydet.kaydet(sifresiz,'temp/sonuc.png')
         #İsimiz bitince key'i sildik.
@@ -36,15 +36,15 @@ def ymgk2xor(path,ServerHash):
     else:
         #Hash'i olasılıkları artırmak adına biraz uzattık.
         populatedHash=hash.populateHash(ServerHash)
-        #Hexten decimale çevirdik
-        gelendeger=fatih.hexToDec(populatedHash)
+        #Hexten Uint8'e çevirdik
+        gelendeger=xor.hexToUint8(populatedHash)
         #Anahtar oluşturmak için ip3'teki gerekli eylemleri tamamladık.
-        keySource = emine.randomsayi(gelendeger)
+        keySource = crypto.randomsayi(gelendeger)
         #Gelen değeri aldık anahtar oluşturduk, anahtar oluştururken boyutlarını almak için orijinal görseli de dahil ettik.
-        anahtar = fatih.anahtarOlustur(gorsel, keySource)
+        anahtar = xor.anahtarOlustur(gorsel, keySource)
 
         #Xorladık ve dönen değeri pillow ile diziden .png uzantılı bir dosyaya çevirip kaydettik.
-        sifrelenmis = fatih.xor(gorsel, anahtar)
+        sifrelenmis = xor.xor(gorsel, anahtar)
 
         kaydet.kaydet(sifrelenmis,'temp/sonuc.png')
         sifreliHash = hash.hashIt('temp/sonuc.png')

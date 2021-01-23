@@ -18,5 +18,5 @@ def xor(gorsel, anahtar):
     r, c ,t= gorsel.shape
     return cv2.bitwise_xor(gorsel, anahtar)
 
-def hexToDec(hash):
+def hexToUint8(hash):
     return [int(hash[i:i+2],16) for i in range(0,len(hash),2)]

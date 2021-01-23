@@ -9,9 +9,9 @@ from django.core import serializers
 from django.conf import settings
 import json
 import random as rnd
-from . import emine
-from . import fatih
-from . import kemal
+from . import crypto
+from . import xor
+from . import handle
 from . import base64
 import cv2
 import numpy as np
@@ -31,15 +31,14 @@ def Sayislem(sayi):
     try:
 
 
-        gelendeger=sayi.data['hash']
+        SHASH =sayi.data['hash']
         folder='resimler/'
         resim = sayi.data['image']
         fs = FileSystemStorage(location=folder)
         filename = fs.save(resim.name, resim)
-        SHASH = gelendeger
         path = "resimler/"+filename
 
-        kemal.ymgk2xor(path,SHASH)
+        handle.ymgk2xor(path, SHASH)
         # img = Image.open('temp/sonuc.png')
         with open('temp/sonuc.png', "rb") as img:
             return HttpResponse(img.read(), content_type='image/png')
