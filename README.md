@@ -5,7 +5,7 @@ Geliştirme süreci çok önce başlamış olmasına rağmen yayınlanmadan önc
 
 ## Açıklama
 
-[YMGK2](https://github.com/kemalsanli/YMGK2) projesinin sunucuda çalışabilir hali, OTP'nin en büyük sorunlarından biri olan gizliğiğ korumak için anahtarı kullanıcının kendisine bile vermeyerek görüntüyü şifreler. Sistemin kullanıcıdan tek isteği görseldir, görselin şifreli mi şifresiz mi olduğunu tanır ve buna göre görselin açılması gerekiyorsa açar şifrelenmesi gerekiyorsa şifreler, kullanıcıya sağladığı rahatlık bir yana dursun anahtar cihaza uğramadığı için hem maliyetleri azaltır hem güvenliği artırır hem de tek seferlik şifreleme açma özelliği sayesinde ortadaki adam saldırılarında elde edilen şifreli görselin tekrar açılamamasını sağlar. 
+[YMGK2](https://github.com/kemalsanli/YMGK2) projesinin sunucuda çalışabilir hali, OTP'nin en büyük sorunlarından biri olan gizliliği korumak için anahtarı kullanıcının kendisine bile vermeyerek görüntüyü şifreler. Sistemin kullanıcıdan tek isteği görseldir, görselin şifreli mi şifresiz mi olduğunu tanır ve buna göre görselin açılması gerekiyorsa açar şifrelenmesi gerekiyorsa şifreler, kullanıcıya sağladığı rahatlık bir yana dursun anahtar cihaza uğramadığı için hem maliyetleri azaltır hem güvenliği artırır hem de tek seferlik şifreleme açma özelliği sayesinde ortadaki adam saldırılarında elde edilen şifreli görselin tekrar açılamamasını sağlar. 
 
 Bu proje dersi geçmek için değil dijital dünyada son kullanıcının veri güvenliğini sağlamak için yapılmıştır, bu yüzden de son kullanıcıdan sadece görseli talep eder. Kullanıcı tecrübesi bu projenin kullanıcı güvenliği ve gizliliğinden sonra en çok önem verdiği şeydir.
 
@@ -82,6 +82,12 @@ http://127.0.0.1:8000/api/
 * Response olarak dönen .png dosyasını API'a geri gönderdiğimizde ise sonuç,
 
 ![POSTMAN 2](https://github.com/kemalsanli/YMGK2-DJANGO-API/blob/main/api1.png?raw=true)
+
+* Opsiyonel olarak yazdığımız arayüz,
+
+![Arayüz 1](https://github.com/kemalsanli/YMGK2-DJANGO-API/blob/main/aray%C3%BCz%202.png?raw=true)
+
+![Arayüz 2](https://github.com/kemalsanli/YMGK2-DJANGO-API/blob/main/aray%C3%BCz%203.png?raw=true)
 
 
 
