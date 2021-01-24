@@ -3,6 +3,8 @@
 [YMGK2](https://github.com/kemalsanli/YMGK2) projesinin sunucuda çalıştırılabilir hali.
 Geliştirme süreci çok önce başlamış olmasına rağmen yayınlanmadan önce ayrı repoya ayrılmıştır.
 
+Multiplatform client uygulaması [bilmiyorum](https://github.com/kemalsanli/bilmiyorum)'da github üzerinde mevcuttur.
+
 ## Açıklama
 
 [YMGK2](https://github.com/kemalsanli/YMGK2) projesinin sunucuda çalışabilir hali, OTP'nin en büyük sorunlarından biri olan gizliliği korumak için anahtarı kullanıcının kendisine bile vermeyerek görüntüyü şifreler. Sistemin kullanıcıdan tek isteği görseldir, görselin şifreli mi şifresiz mi olduğunu tanır ve buna göre görselin açılması gerekiyorsa açar şifrelenmesi gerekiyorsa şifreler, kullanıcıya sağladığı rahatlık bir yana dursun anahtar cihaza uğramadığı için hem maliyetleri azaltır hem güvenliği artırır hem de tek seferlik şifreleme açma özelliği sayesinde ortadaki adam saldırılarında elde edilen şifreli görselin tekrar açılamamasını sağlar. 
