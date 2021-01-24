@@ -66,7 +66,7 @@ Henüz herhangi bir sorunla karşılaşmadık.
 
 Formdata olarak image ve hash parametrelerini göndermelisiniz. 
 
-Görsellerin bitwise olarak xor'lanabilmesi için hash değerleri önem arz etmektedir fakat eğer görseli sorunsuz açmak istiyorsanız görsel üzerinde oynama yapmamalısınız.
+Görsellerin bitwise olarak xor'lanabilmesi için hash değerleri önem arz etmektedir eğer görseli sorunsuz açmak istiyorsanız görsel üzerinde oynama yapmamalısınız.
 
 Hash değeri opsiyonel olmasa da zorunlu da değildir, yani aynı hash değeri ile farklı keyler üretebilirsiniz. Hash key üretilmesinde kullanılan faktörlerden sadece bir tanesidir. 
 
